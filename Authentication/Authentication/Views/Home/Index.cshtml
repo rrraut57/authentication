@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="row">
+    <div class="col-6 offset-4"><h5>You have been login successfully</h5></div>
+</div>
+
+<div class="token-container">
+    <div class="token-text" id="token-display">You can use this token for further api call: <br>  <span style="color:blue">@ViewBag.Token</span> </div>
+</div>
+<div class="row">
+    <div class="col-6 offset-6"><button onclick="@("window.location.href='" + @Url.Action("Login", "Account") + "'");" class="btn btn-secondary">Logout</button></div>
+</div>
